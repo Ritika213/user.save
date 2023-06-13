@@ -57,12 +57,12 @@
         }
             function showUserOnScreen(obj){
         const parentElem=document.getElementById('listOfitem')
-        parentElem.innerHTML = parentElem.innerHTML + `<li>${obj.username} - ${obj.password}</li>`
+        parentElem.innerHTML = parentElem.innerHTML + `<li>${obj.username} - ${obj.email}-${obj.phonenumber}</li>`
         const deleteButton = document.createElement('input')
         deleteButton.type = "button"
         deleteButton.value = 'Delete'
         deleteButton.onclick = () => {
-            localStorage.removeItem(obj.password)
+            localStorage.removeItem(obj.username)
             parentElem.remove(parentElem)
 
         }
