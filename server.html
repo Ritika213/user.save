@@ -43,7 +43,7 @@
         
         window.addEventListner("DOMContentLoaded",()=>{
             const localStorageObj=localStorage;
-        const localStoragekeys = OBject.keys(localStorageObj)
+        const localStoragekeys = Object.keys(localStorageObj)
         for(var i=0;i<localStoragekeys.length;i++){
             const userDEtailsString=localStorageObj[key];
             const userDEtailsobj =Json.parse(userDetailsString);
