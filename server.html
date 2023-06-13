@@ -8,7 +8,7 @@
 <body>
     <form onsubmit="saveToLocalStroage(event)">
         <lable>Name</lable>
-        <input type="text" name="usename" required/>
+        <input type="text" name="username" required/>
         <lable>Emailid</lable>
         <input type="text" name="emailid" required/>
         <lable>Phone Number</lable>
@@ -41,7 +41,7 @@
            // localStorage.setItem(obj.email.JSON.stringify(obj))
            // showUserOnScreen(obj)
         
-        window.addEventListner("DOMContentLoaded",()=>{
+        window.addEventListener("DOMContentLoaded",()=>{
             const localStorageObj=localStorage;
         const localStoragekeys = Object.keys(localStorageObj)
         for(var i=0;i<localStoragekeys.length;i++){
